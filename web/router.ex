@@ -38,6 +38,9 @@ defmodule TodoistWebConsole.Router do
   end
 
   defp assign_current_user(conn, _) do
-    assign(conn, :current_user, get_session(conn, :current_user))
+    case Map.has_key?(conn.assigns, :current_user) do
+      true -> conn
+      _    -> assign(conn, :current_user, get_session(conn, :current_user))
+    end
   end
 end

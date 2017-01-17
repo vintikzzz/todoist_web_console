@@ -35,6 +35,7 @@ defmodule TodoistWebConsole.Mixfile do
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
      {:oauth2, "~> 0.8"},
-     {:uuid, "~> 1.1"}]
+     {:uuid, "~> 1.1"},
+     {:mock, "~> 0.2.0", only: :test}]
   end
 end

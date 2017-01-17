@@ -20,7 +20,6 @@ defmodule Todoist.OAuth do
     Application.get_env(:todoist_web_console, Todoist.OAuth)
     |> Keyword.merge(config())
     |> Keyword.merge(opts)
-    |> IO.inspect
     |> OAuth2.Client.new()
   end
 

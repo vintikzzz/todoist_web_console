@@ -19,7 +19,7 @@
       <main role="main">
         <h1>Todoist web console</h1>
         <p>Sample web console to manage <a href="https://todoist.com">Todoist</a> tasks.</p>
-        <h2>Command list</h2>
+        <h2>Usage</h2>
         <p><strong>list</strong> - lists all tasks</p>
         <p><strong>create <i>task_name</i></strong> - creates task</p>
         <p><strong>delete <i>task_id</i></strong> - deletes task by id</p>
