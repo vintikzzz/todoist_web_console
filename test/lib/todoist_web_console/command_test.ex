@@ -8,5 +8,6 @@ defmodule TodoistWebConsole.CommandTest do
     assert Command.parse("create something awesome")     == {:create, ["something", "awesome"]}
     assert Command.parse("create \"something awesome\"") == {:create, ["something awesome"]}
     assert Command.parse("create 'something awesome'")   == {:create, ["something awesome"]}
+    assert Command.parse("")                             == {nil, []}
   end
 end

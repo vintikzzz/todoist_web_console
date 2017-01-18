@@ -1,4 +1,5 @@
 defmodule TodoistWebConsole.Command do
+  def parse(""), do: {nil, []}
   def parse(command) do
     [command | args] = Regex.scan(~r/"([^"]*)"|'([^']*)'|[^\s]+/, command, [])
     |> Enum.map(fn e ->  List.last(e) end)

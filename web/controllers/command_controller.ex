@@ -41,6 +41,6 @@ defmodule TodoistWebConsole.CommandController do
       args:    %{item_id: id, service: :email, due_date_utc: time}
     }])
   end
-  def command(_, {:"", _}), do: nil
+  def command(_, {nil, _}), do: nil
   def command(_, {_, _}), do: :unknown_command
 end
